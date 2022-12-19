@@ -3,6 +3,8 @@ import Sidebar from "./Navigation/Sidebar";
 import Topbar from "./Navigation/Topbar";
 
 const GlobalApp = () => {
+  const userRole = "admin";
+
   return (
     <div className="container-scroller">
       <Topbar />

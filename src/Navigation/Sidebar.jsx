@@ -1,4 +1,7 @@
 import React from "react";
+import profileImg from "../images/faces-clipart/pic-1.png";
+import NavLink from "./NavLink";
+import { sections } from "../data/navigationSections";
 
 const Sidebar = () => {
   return (
@@ -7,124 +10,25 @@ const Sidebar = () => {
         <li className="nav-item nav-profile">
           <a href="#" className="nav-link">
             <div className="nav-profile-image">
-              <img
-                src={
-                  process.env.PUBLIC_URL + "./assets/faces-clipart/pic-1.png"
-                }
-                alt="profile"
-              />
+              <img src={profileImg} alt="profile" />
               <span className="login-status online"></span>
               {/* <!--change to offline or busy as needed--> */}
             </div>
             <div className="nav-profile-text d-flex flex-column">
               <span className="font-weight-bold mb-2">David Grey. H</span>
-              <span className="text-secondary text-small">Project Manager</span>
+              <span className="text-secondary text-small">Administrator</span>
             </div>
             <i className="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
           </a>
         </li>
-        <li className="nav-item active">
-          <a className="nav-link" href="index.html">
-            <span className="menu-title">Dashboard</span>
-            <i className="mdi mdi-home menu-icon"></i>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="nav-link"
-            data-toggle="collapse"
-            href="#ui-basic"
-            aria-expanded="false"
-            aria-controls="ui-basic"
-          >
-            <span className="menu-title">Basic UI Elements</span>
-            <i className="menu-arrow"></i>
-            <i className="mdi mdi-crosshairs-gps menu-icon"></i>
-          </a>
-          <div className="collapse" id="ui-basic">
-            <ul className="nav flex-column sub-menu">
-              <li className="nav-item">
-                <a className="nav-link" href="pages/ui-features/buttons.html">
-                  Buttons
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="pages/ui-features/typography.html"
-                >
-                  Typography
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="pages/icons/mdi.html">
-            <span className="menu-title">Icons</span>
-            <i className="mdi mdi-contacts menu-icon"></i>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="pages/forms/basic_elements.html">
-            <span className="menu-title">Forms</span>
-            <i className="mdi mdi-format-list-bulleted menu-icon"></i>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="pages/charts/chartjs.html">
-            <span className="menu-title">Charts</span>
-            <i className="mdi mdi-chart-bar menu-icon"></i>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="pages/tables/basic-table.html">
-            <span className="menu-title">Tables</span>
-            <i className="mdi mdi-table-large menu-icon"></i>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="nav-link"
-            data-toggle="collapse"
-            href="#general-pages"
-            aria-expanded="false"
-            aria-controls="general-pages"
-          >
-            <span className="menu-title">Sample Pages</span>
-            <i className="menu-arrow"></i>
-            <i className="mdi mdi-medical-bag menu-icon"></i>
-          </a>
-          <div className="collapse" id="general-pages">
-            <ul className="nav flex-column sub-menu">
-              <li className="nav-item">
-                <a className="nav-link" href="pages/samples/blank-page.html">
-                  Blank Page{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="pages/samples/login.html">
-                  Login{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="pages/samples/register.html">
-                  Register{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="pages/samples/error-404.html">
-                  404{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="pages/samples/error-500.html">
-                  500{" "}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
+        {/* ----------- SIDEBAR LINKS --------- */}
+        {sections &&
+          Object.keys(sections).map((sectionName) => {
+            return sections[sectionName].map((link, i) => {
+              return <NavLink key={i} linkName={link.name} icon={link.icon} />;
+            });
+          })}
+
         <li className="nav-item sidebar-actions">
           <span className="nav-link">
             <div className="border-bottom">
