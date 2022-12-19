@@ -22,8 +22,15 @@ const Sidebar = () => {
           </a>
         </li>
         {/* ----------- SIDEBAR LINKS --------- */}
-        {sections?.map((link) => {
-          return <NavLink linkName={link.name} icon={link.icon} />;
+        {sections?.map((link, i) => {
+          return (
+            <NavLink
+              key={i}
+              linkName={link.name}
+              icon={link.icon}
+              linkTo={link.linkTo}
+            />
+          );
         })}
       </ul>
     </nav>
