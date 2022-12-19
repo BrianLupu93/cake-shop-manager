@@ -1,64 +1,53 @@
-export const sections = {
-  dashboard: [
-    {
-      name: "Dashboard",
-      icon: "mdi mdi-home",
-    },
-  ],
+export const sections = [
+  {
+    name: "Dashboard",
+    icon: "mdi mdi-home",
+  },
 
-  cofetarie: [
-    {
-      name: "Cofetarie",
-      icon: "mdi mdi-cake-variant",
-    },
-    {
-      name: "Comanda",
-      icon: "mdi mdi-note-text",
-    },
-    {
-      name: "Stoc Laborator",
-      icon: "mdi mdi-bowl",
-    },
+  {
+    name: "Cofetarie",
+    icon: "mdi mdi-cake-variant  mdi mdi-store",
+  },
+  {
+    name: "Comanda Noua",
+    icon: "mdi mdi-note-text",
+  },
+  {
+    name: "Lista Comenzi",
+    icon: "mdi mdi-library",
+  },
+  {
+    name: "Laborator",
+    icon: "mdi mdi-cake-variant",
+  },
+  {
+    name: "Retete",
+    icon: "mdi mdi-book-open-page-variant",
+  },
 
-    {
-      name: "Stoc Depozit",
-      icon: "mdi mdi-dropbox",
-    },
-    {
-      name: "Lista Cumparaturi",
-      icon: "mdi mdi-cart-outline",
-    },
-  ],
+  {
+    name: "Activitate Laborator",
+    icon: "mdi mdi-timetable",
+  },
+  {
+    name: "Stoc Depozit",
+    icon: "mdi mdi-dropbox",
+  },
+  {
+    name: "Stoc Laborator",
+    icon: "mdi mdi-bowl",
+  },
 
-  laborator: [
-    {
-      name: "Laborator",
-      icon: "mdi mdi-bowl",
-    },
-    {
-      name: "Retete",
-      icon: "mdi mdi-book-open-page-variant",
-    },
-    {
-      name: "Comenzi",
-      icon: "mdi mdi-note-text",
-    },
-    {
-      name: "Stoc Laborator",
-      icon: "mdi mdi-bowl",
-    },
-    {
-      name: "Activitate",
-      icon: "mdi mdi-timetable",
-    },
-
-    {
-      name: "Stoc Depozit",
-      icon: "mdi mdi-dropbox",
-    },
-    {
-      name: "Lista Cumparaturi",
-      icon: "mdi mdi-cart-outline",
-    },
-  ],
-};
+  {
+    name: "Lista Cumparaturi",
+    icon: "mdi mdi-cart-outline",
+  },
+  {
+    name: "Utilizatori",
+    icon: "mdi mdi-account",
+  },
+  {
+    name: "Log-Out",
+    icon: "mdi mdi-exit-to-app",
+  },
+];

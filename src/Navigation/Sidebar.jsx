@@ -22,32 +22,9 @@ const Sidebar = () => {
           </a>
         </li>
         {/* ----------- SIDEBAR LINKS --------- */}
-        {sections &&
-          Object.keys(sections).map((sectionName) => {
-            return sections[sectionName].map((link, i) => {
-              return <NavLink key={i} linkName={link.name} icon={link.icon} />;
-            });
-          })}
-
-        <li className="nav-item sidebar-actions">
-          <span className="nav-link">
-            <div className="border-bottom">
-              <h6 className="font-weight-normal mb-3">Projects</h6>
-            </div>
-            <button className="btn btn-block btn-lg btn-gradient-primary mt-4">
-              + Add a project
-            </button>
-            <div className="mt-4">
-              <div className="border-bottom">
-                <p className="text-secondary">Categories</p>
-              </div>
-              <ul className="gradient-bullet-list mt-4">
-                <li>Free</li>
-                <li>Pro</li>
-              </ul>
-            </div>
-          </span>
-        </li>
+        {sections?.map((link) => {
+          return <NavLink linkName={link.name} icon={link.icon} />;
+        })}
       </ul>
     </nav>
   );
