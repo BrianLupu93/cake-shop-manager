@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../images/logo.svg";
-import logoMini from "../images/logo-mini.svg";
+import logo from "../../images/logo.svg";
+import logoMini from "../../images/logo-mini.svg";
 
 const Topbar = () => {
   return (

@@ -2,7 +2,7 @@ import "./assets/css/style.css";
 import "./assets/mdi/css/materialdesignicons.min.css";
 import { Routes, Route } from "react-router-dom";
 import MainContainer from "./MainContainer";
-import Login from "./components/Log-In-Out/Login";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
