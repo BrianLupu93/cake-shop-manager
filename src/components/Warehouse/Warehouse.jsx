@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import PageContent from "../../Utils/PageContent";
 import Products from "./Products";
-
 import UpdateStock from "./UpdateStock";
-import StockSituation from "./StockSituation";
 
 const Warehouse = () => {
   const [components, setComponents] = useState([
     { name: "products", component: <Products />, display: true },
     { name: "update stock", component: <UpdateStock />, display: false },
-    { name: "stock situation", component: <StockSituation />, display: false },
   ]);
 
   const updateComponents = (name) => {
@@ -50,14 +47,6 @@ const Warehouse = () => {
                   onClick={(e) => updateComponents(e.target.value)}
                 >
                   Update Stock
-                </button>
-                <button
-                  value="stock situation"
-                  type="button"
-                  className="btn btn-gradient-primary btn-fw"
-                  onClick={(e) => updateComponents(e.target.value)}
-                >
-                  Stock Situation
                 </button>
               </div>
             </div>
