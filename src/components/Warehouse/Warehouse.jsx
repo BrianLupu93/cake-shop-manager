@@ -33,11 +33,11 @@ const Warehouse = () => {
         <>
           <div className="row">
             <div className="col-12 grid-margin">
-              <div className="col-12 grid-margin ">
+              <div className="col-12 d-flex add-items justify-content-center">
                 <button
                   value="products"
                   type="button"
-                  className="col-4 btn btn-gradient-primary btn-fw"
+                  className="btn btn-gradient-primary btn-fw "
                   onClick={(e) => updateComponents(e.target.value)}
                 >
                   Products
@@ -46,7 +46,7 @@ const Warehouse = () => {
                 <button
                   value="update stock"
                   type="button"
-                  className=" col-4 btn btn-gradient-primary btn-fw"
+                  className="btn btn-gradient-primary btn-fw"
                   onClick={(e) => updateComponents(e.target.value)}
                 >
                   Update Stock
@@ -54,7 +54,7 @@ const Warehouse = () => {
                 <button
                   value="stock situation"
                   type="button"
-                  className="col-4 btn btn-gradient-primary btn-fw"
+                  className="btn btn-gradient-primary btn-fw"
                   onClick={(e) => updateComponents(e.target.value)}
                 >
                   Stock Situation
