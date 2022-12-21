@@ -1,0 +1,8 @@
+.icon-remove-btn {
+  border: none;
+  background: none;
+}
+
+#category-select {
+  text-transform: capitalize;
+}

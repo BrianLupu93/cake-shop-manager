@@ -3,6 +3,7 @@ import "./assets/mdi/css/materialdesignicons.min.css";
 import { Routes, Route } from "react-router-dom";
 import MainContainer from "./MainContainer";
 import Login from "./components/Login/Login";
+import "./App.css";
 
 function App() {
   return (
