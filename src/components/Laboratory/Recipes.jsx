@@ -39,7 +39,7 @@ const Recipes = () => {
                       className="js-example-basic-single select2-hidden-accessible"
                       style={{ width: "70%" }}
                       data-select2-id="1"
-                      tabindex="-1"
+                      tabIndex="-1"
                       aria-hidden="true"
                       {...register("recipeCategory")}
                     >
@@ -69,7 +69,7 @@ const Recipes = () => {
                       className="js-example-basic-single select2-hidden-accessible"
                       style={{ width: "70%" }}
                       data-select2-id="1"
-                      tabindex="-1"
+                      tabIndex="-1"
                       aria-hidden="true"
                       {...register("ingredient")}
                     >
