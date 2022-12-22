@@ -34,7 +34,7 @@ const Warehouse = () => {
                 <button
                   value="products"
                   type="button"
-                  className="btn btn-gradient-primary btn-fw "
+                  className="btn btn-dark btn-fw "
                   onClick={(e) => updateComponents(e.target.value)}
                 >
                   Products
@@ -43,7 +43,7 @@ const Warehouse = () => {
                 <button
                   value="update stock"
                   type="button"
-                  className="btn btn-gradient-primary btn-fw"
+                  className="btn btn-dark btn-fw"
                   onClick={(e) => updateComponents(e.target.value)}
                 >
                   Update Stock
