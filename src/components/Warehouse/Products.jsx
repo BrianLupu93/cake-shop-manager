@@ -97,42 +97,42 @@ const Products = () => {
                           <td>1</td>
                           <td>Flour</td>
                           <td>Raw Material</td>
-                          <td className="mdi mdi-close-circle text-danger"></td>
+                          <td className="mdi mdi-delete text-danger"></td>
                           <td className="mdi mdi-lead-pencil text-success"></td>
                         </tr>
                         <tr>
                           <td>2</td>
                           <td>Coca Cola</td>
                           <td>Drinks</td>
-                          <td className="mdi mdi-close-circle text-danger"></td>
+                          <td className="mdi mdi-delete text-danger"></td>
                           <td className="mdi mdi-lead-pencil text-success"></td>
                         </tr>
                         <tr>
                           <td>3</td>
                           <td>Nutella</td>
                           <td>Raw Materials</td>
-                          <td className="mdi mdi-close-circle text-danger"></td>
+                          <td className="mdi mdi-delete text-danger"></td>
                           <td className="mdi mdi-lead-pencil text-success"></td>
                         </tr>
                         <tr>
                           <td>4</td>
                           <td>Cake Box XL</td>
                           <td>Packing</td>
-                          <td className="mdi mdi-close-circle text-danger"></td>
+                          <td className="mdi mdi-delete text-danger"></td>
                           <td className="mdi mdi-lead-pencil text-success"></td>
                         </tr>
                         <tr>
                           <td>5</td>
                           <td>Cake Box M</td>
                           <td>Packing</td>
-                          <td className="mdi mdi-close-circle text-danger"></td>
+                          <td className="mdi mdi-delete text-danger"></td>
                           <td className="mdi mdi-lead-pencil text-success"></td>
                         </tr>
                         <tr>
                           <td>6</td>
                           <td>Tuborg</td>
                           <td>Drinks</td>
-                          <td className="mdi mdi-close-circle text-danger"></td>
+                          <td className="mdi mdi-delete text-danger"></td>
                           <td className="mdi mdi-lead-pencil text-success"></td>
                         </tr>
                       </tbody>
